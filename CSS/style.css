@@ -1,24 +1,34 @@
 body{
     background-color: grey;
+    color: white;
 }
 
 header{
     background-color: blue;
     position:relative;
+    font-size: 35px;
 }
 
 .mainBody{
     margin: 40px 150px 20px 150px;
 }
 
+.mainBody div{
+    display: flex;
+    flex: 1fr 1fr;
+}
+
 section{
     background-color: rgb(12, 100, 201);
-    display: flex;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 15px;
 }
 
 .menu ul{
     display:flex;
     justify-content:space-evenly;
+    font-family:cursive;
 }
 
 .menu li{
@@ -31,19 +41,28 @@ section{
     color: blueviolet;
 }
 
+footer{
+    background-color: rgb(13, 49, 209);
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @media screen and (max-width:360px)  {
     .mainBody{
         margin: 40px 25px 20px 25px;
+        font-size: 40px;
     }
 }
 @media screen and (max-width:768px)  {
     .mainBody{
         margin: 40px 50px 20px 50px;
+        font-size: 35px;
     }
 }
 @media screen and (max-width:1200px)  {
     .mainBody{
         margin: 40px 75px 20px 75px;
+        font-size: 25px;
     } 
 }
 
