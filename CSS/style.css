@@ -25,6 +25,8 @@ section{
     padding: 15px;  
 }
 
+<<<<<<< HEAD
+=======
 section p{
     justify-content: center;
 }
@@ -35,6 +37,7 @@ section:hover{
     transition:3s;
 }
 
+>>>>>>> 32df7306abaf19b3d3ab5754d2eeb465136d9c44
 .menu ul{
     display:flex;
     justify-content:space-evenly;
