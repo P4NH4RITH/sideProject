@@ -4,7 +4,6 @@ body{
 }
 
 header{
-    background-color: rgb(16, 73, 230);
     position:relative;
     font-size: 35px;
 }
@@ -22,7 +21,8 @@ section{
     background-color: rgb(12, 100, 201);
     margin-top: 50px;
     margin-left: 20px;
-    padding: 15px;  
+    padding: 15px;
+    border-radius: 10px;  
 }
 
 .skills, .atouts{
