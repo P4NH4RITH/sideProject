@@ -15,7 +15,7 @@ header{
 
 .mainBody div{
     display: grid;
-    grid-template-columns: 1fr 1fr; 
+    grid-template-columns: repeat(2, 1fr); 
 }
 
 section{
@@ -25,19 +25,13 @@ section{
     padding: 15px;  
 }
 
-<<<<<<< HEAD
-=======
-section p{
-    justify-content: center;
+.skills, .atouts{
+    justify-self: center;
+}
+.divers{
+    grid-column: 1 / 3;
 }
 
-section:hover{
-    transform: scale(120%);
-    border-style: double;
-    transition:3s;
-}
-
->>>>>>> 32df7306abaf19b3d3ab5754d2eeb465136d9c44
 .menu ul{
     display:flex;
     justify-content:space-evenly;
