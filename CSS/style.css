@@ -4,7 +4,7 @@ body{
 }
 
 header{
-    background-color: blue;
+    background-color: rgb(16, 73, 230);
     position:relative;
     font-size: 35px;
 }
@@ -25,6 +25,19 @@ section{
     padding: 15px;  
 }
 
+<<<<<<< HEAD
+=======
+section p{
+    justify-content: center;
+}
+
+section:hover{
+    transform: scale(120%);
+    border-style: double;
+    transition:3s;
+}
+
+>>>>>>> 32df7306abaf19b3d3ab5754d2eeb465136d9c44
 .menu ul{
     display:flex;
     justify-content:space-evenly;
@@ -37,14 +50,14 @@ section{
     padding: 20px;
 }
 .menu li:hover{
-    font-size: 150%;
+    transform: scale(200%);
     color: blueviolet;
 }
 
 footer{
     position: static;
     bottom: 0;
-    background-color: rgb(13, 49, 209);
+    background-color: rgba(0, 0, 0, 0.185);
     display: flex;
     justify-content: space-evenly;
 }
@@ -57,7 +70,7 @@ footer{
 }
 @media screen and (max-width:768px)  {
     .mainBody{
-        margin: 40px 25px 20px 25px;
+        margin: 40px 15px 20px 15px;
         font-size: 25px;
     }
 }
