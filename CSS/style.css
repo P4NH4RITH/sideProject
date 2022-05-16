@@ -25,10 +25,6 @@ section{
     padding: 15px;  
 }
 
-section p{
-    justify-content: center;
-}
-
 .menu ul{
     display:flex;
     justify-content:space-evenly;
