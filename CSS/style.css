@@ -9,24 +9,25 @@ header{
 
 .mainBody{
     margin: 40px 150px 20px 150px;
+    justify-self: center;
 }
 .mainBody div{
     display: grid;
-    grid-template-areas: "1fr 1fr 1fr";
+    grid-template-areas: "1fr 1fr";
 }
-
 img{
-    width: 70%;
-    height: 90%;
+    display: flex;
+    width: 60%;
+    height: 80%;
     justify-self: center;
-    align-self: end;
+    align-self: center;
 }
 .imgPosition{
-    grid-column: 1 / 2;
-    grid-row: 1 / 1;
+    grid-column: 2 / 3;
 }
 
 section{
+    height: fit-content;
     background-color: rgb(12, 100, 201);
     margin-top: 50px;
     margin-left: 20px;
@@ -41,8 +42,8 @@ section:hover{
     justify-self: center;
 }
 .divers{
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
     font-size: 20px;
     justify-content: center;
 }
@@ -56,7 +57,6 @@ section:hover{
     font-size: 20px;
     grid-column: 1 / 3;
 }
-
 .menu ul{
     display:flex;
     flex-wrap: wrap;
@@ -105,19 +105,15 @@ footer{
         font-size: 25px;
         justify-content: center ;
     }
-    .mainBody div{
-
-    }
     .divers{
         grid-column: 1 / 3;
         grid-row: 1 / 2;
-        font-size: 20px;
+        font-size: 10px;
         justify-content: center;
     }
     .imgPosition{
         margin-top: 20px;
         grid-column: 1 / 3;
-        grid-row: 2 / 3;
         justify-items: center;
     }
 }
