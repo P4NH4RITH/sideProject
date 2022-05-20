@@ -1,6 +1,6 @@
 body{
     background-color: rgb(255, 255, 255);
-    color: white;
+    color: white;    
 }
 header{
     position:relative;
@@ -29,8 +29,6 @@ h1, h2, h3{
 
 .mainBody{
     background-color: rgb(231, 152, 78);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     margin: 40px 150px 20px 150px;
     justify-self: center;
 }
@@ -40,6 +38,8 @@ img{
 }
 
 section{
+    display: grid;
+    grid-template-areas: "1fr 1fr";
     width: fit-content;
     height: 20rem;
     background-color: transparent;
@@ -138,5 +138,3 @@ footer{
         font-size: 20px;
     } 
 }
-
-
