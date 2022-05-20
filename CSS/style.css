@@ -6,28 +6,38 @@ header{
     position:relative;
     font-size: 35px;
 }
+h1, h2, h3{
+    color: rgb(0, 0, 0);
+    font-family: monospace;
+}
+
+.menu ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    font-family:cursive;
+}
+.menu li{
+    list-style-type: none;
+    display: inline-flex;
+    padding: 20px;
+}
+.menu li:hover{
+    transform: scale(200%);
+    color: blueviolet;
+}
 
 .mainBody{
+    display: grid;
     margin: 40px 150px 20px 150px;
     justify-self: center;
 }
-.mainBody div{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
 img{
-    display: flex;
-    width: 60%;
+    width: 80%;
     height: 80%;
-    justify-self: center;
-    align-self: center;
-}
-.imgPosition{
-    grid-column: 2 / 2;
 }
 
 section{
-    height: fit-content;
     background-color: rgb(12, 100, 201);
     margin-top: 50px;
     margin-left: 20px;
@@ -42,8 +52,8 @@ section:hover{
     justify-self: center;
 }
 .divers{
+    height: fit-content;
     grid-column: 1 / 1;
-    grid-row: 1 / 1;
     font-size: 20px;
     justify-content: center;
 }
@@ -53,26 +63,23 @@ section:hover{
     transform: scale(120%);
     transition: ease, 2s;
 }
+.imgPosition{
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+}
 .gears{
     font-size: 20px;
-    grid-column: 1 / 3;
+    grid-column: 1 / 4;
 }
-.menu ul{
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:space-evenly;
-    font-family:cursive;        
+.gears td{
+    text-align: center;
 }
-.menu li{
+.gears li{
     list-style-type: none;
-    display: inline-flex;
-    padding: 20px;
 }
-.menu li:hover{
-    transform: scale(200%);
-    color: blueviolet;
-}
-
 footer{
     position: static;
     bottom: 0;
@@ -108,13 +115,16 @@ footer{
     .divers{
         grid-column: 1 / 3;
         grid-row: 1 / 2;
-        font-size: 10px;
+        font-size: 12px;
         justify-content: center;
     }
     .imgPosition{
         margin-top: 20px;
         grid-column: 1 / 3;
         justify-items: center;
+    }
+    .gears{
+        font-size: 12px;
     }
 }
 @media screen and (max-width:1200px)  {
