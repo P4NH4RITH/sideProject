@@ -29,7 +29,8 @@ h1, h2, h3{
 
 .mainBody{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     margin: 40px 150px 20px 150px;
     justify-self: center;
 }
@@ -39,19 +40,18 @@ img{
 }
 
 section{
+    grid-template-rows: 1fr 1fr 1fr;
     background-color: rgb(12, 100, 201);
-    margin-top: 50px;
-    margin-left: 20px;
-    padding: 15px;
     border-radius: 10px;
-    align-self: center;  
+    margin: 1%;
+    padding: 20px; 
 }
 section:hover{
     transform: scale(120%);
     transition: ease, 2s;
 }
-.skills, .atouts{
-    justify-self: center;
+.aboutMe, .propos, .paragraph, .skills, .atouts{
+
 }
 .divers{
     height: fit-content;
@@ -64,15 +64,29 @@ section:hover{
     transform: scale(120%);
     transition: ease, 2s;
 }
+.aboutMe{
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+    text-align: center;
+}
+.propos{
+    grid-column: 3 / 4;
+    grid-row: 2 / 4;
+    text-align: center;
+}
+.paragraph{
+    grid-column: 1 / 4;
+    grid-row: 4 / 4;
+    text-align: center;
+}
 .imgPosition{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
     justify-items: center;
-    align-items: center;
+    align-items: center; 
 }
 .gears{
     font-size: 20px;
-    grid-column: 1 / 4;
 }
 .gears td{
     text-align: center;
@@ -113,14 +127,11 @@ footer{
         justify-content: center ;
     }
     .divers{
-        grid-column: 1 / 3;
-        grid-row: 1 / 2;
         font-size: 12px;
         justify-content: center;
     }
     .imgPosition{
         margin-top: 20px;
-        grid-column: 1 / 3;
         justify-items: center;
     }
     .gears{
