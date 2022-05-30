@@ -1,6 +1,5 @@
 body{
-    background-color: rgb(141, 195, 245);
-    color: white;
+    background-color: #111; 
 }
 header{
     position:relative;
@@ -29,8 +28,10 @@ p{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    margin: 40px 150px 20px 150px;
+    margin: -10px 20% 5px 20%;
     justify-self: center;
+    background-color: rgb(127 155 255);
+    border-radius: 15px;
 }
 
 .menu ul{
@@ -58,7 +59,7 @@ img{
 
 section{
     grid-template-rows: 1fr 1fr 1fr;
-    background-color: rgb(12, 100, 201);
+    background-color: rgba(128, 128, 128, 0.322);
     border-radius: 10px;
     margin: 1%;
     padding: 20px; 
@@ -104,7 +105,7 @@ section:hover{
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 1fr;
-    grid-column: 3 / 3;
+    grid-column: 2 / 4;
     grid-row: 2 / 2;
     justify-items: center;
     align-items: center;
@@ -113,7 +114,7 @@ section:hover{
 .gears{
     grid-column: 1 / 4;
     grid-row: 3 / 3;
-    font-size: 20px;
+    font-size: larger;
 }
 .gears td{
     text-align: center;
@@ -124,9 +125,11 @@ section:hover{
 footer{
     position: static;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.185);
+    background-color: #FFF;
     display: flex;
     justify-content: space-evenly;
+    margin: 0 20% 5px 20%;
+    border-radius: 0% 5px;
 }
 
 @media screen and (max-width:360px)  {
