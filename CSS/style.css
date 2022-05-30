@@ -15,6 +15,14 @@ h1, h2, h3{
 }
 p{
     font-size: larger;
+    margin-bottom: 10%;
+}
+.pageSuiv{
+    text-align: end;
+    align-content: flex-end;
+    position: absolute;
+    right: 5px;
+    bottom: 0;
 }
 
 .mainBody{
@@ -28,7 +36,7 @@ p{
 .menu ul{
     display:flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
+    justify-content:space-evenly;
     font-family:cursive;
 }
 .menu li{
@@ -64,17 +72,19 @@ section:hover{
 }
 .aboutMe{
     grid-column: 2 / 3;
-    grid-row: 2 / 4;
+    grid-row: 2 / 2;
     text-align: center;
+    position: relative;
 }
 .propos{
     grid-column: 3 / 4;
-    grid-row: 2 / 4;
+    grid-row: 2 / 2;
     text-align: center;
+    position: relative;
 }
 .paragraph{
     grid-column: 1 / 4;
-    grid-row: 4 / 4;
+    grid-row: 3 / 3;
     text-align: center;
 }
 .divers{
