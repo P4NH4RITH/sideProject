@@ -1,11 +1,11 @@
 body{
-    background-color: #111; 
+    background-color: rgb(145, 179, 219); 
 }
 header{
-    position:relative;
+    position: fixed;
     font-size: 35px;
-    grid-column: 2 / 3;
-    grid-row: 1 / 1;
+    top: -35px;
+    left: 0;
 }
 h1, h2, h3{
     color: rgb(0, 0, 0);
@@ -35,10 +35,14 @@ p{
 }
 
 .menu ul{
+    background-color: rgb(45, 76, 218);
+    border-radius: 0 15px 15px 0;
     display:flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content:space-evenly;
     font-family:cursive;
+    
 }
 .menu li{
     list-style-type: none;
@@ -136,6 +140,17 @@ section:hover{
     grid-row: 3/ 3;
 }
 
+.pageUp{
+    width: 50px;
+    height:50px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    left: 0;
+    bottom: 0;
+}
 footer{
     position: static;
     bottom: 0;
