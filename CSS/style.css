@@ -195,8 +195,11 @@ footer{
     .menu ul{
         flex-direction: column;
     }
-    #menu{
-        transform: translateX(-70%);
+    /* .menu a{
+        display:none;
+    } */
+    .menuBurger{
+        transform: translate(-75%, 0%);
     }
     .menu li{
         font-size: 15px;
@@ -232,7 +235,10 @@ footer{
     .menu ul{
         flex-direction: column;     
     }    
-    #menu{
-        transform: translateX(-70%);
+    /* .menu a{
+        display:none;
+    } */
+    .menuBurger{
+        transform: translate(-75%, 0%);
     }
 }
