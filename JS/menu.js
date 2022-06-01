@@ -1,3 +1,5 @@
-const menu = document.createElement("nav");
-const newLi = document.createElement("li");
-console.log(window);
+let burger = document.body.getElementsByTagName('header');
+
+burger.addEventListener('click', function(){
+    burger.classList.toggle('menuBurger');    
+});   
