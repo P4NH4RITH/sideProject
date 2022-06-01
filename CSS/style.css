@@ -7,6 +7,7 @@ header{
     /* top: -35px;
     left: 0; */
     grid-column: 1 / 4;
+    grid-row: 1 / 1;
 }
 h1, h2, h3{
     color: rgb(0, 0, 0);
@@ -27,8 +28,6 @@ p{
 
 .mainBody{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     margin: -10px 20% 5px 20%;
     justify-self: center;
     background-color: rgb(127 155 255);
@@ -125,19 +124,19 @@ section:hover{
 }
 .skills{
     grid-column: 1 / 2;
-    grid-row: 1 / 1;
+    grid-row: 2 / 2;
 }
 .atouts{
     grid-column: 3 / 3;
-    grid-row: 1 / 2;
+    grid-row: 2 / 2;
 }
 .experience{
     grid-column: 1 / 4;
-    grid-row: 2 / 2;
+    grid-row: 3 / 3;
 }
 .formation{
     grid-column: 1 / 4;
-    grid-row: 3/ 3;
+    grid-row: 4 / 4;
 }
 
 .pageUp{
@@ -188,10 +187,17 @@ footer{
         font-size: 35px;
         top: -35px;
         left: 0;
+        background-color: transparent;
     }
     
     .menu ul{
-        flex-direction: column; 
+        flex-direction: column;
+    }
+    #menu{
+        transform: translate(-70%, 10%);
+    }
+    .menu ul:{
+        transform: translate(0%, 0%); 
     }
     .menu li{
         font-size: 15px;
@@ -222,8 +228,12 @@ footer{
         font-size: 35px;
         top: -35px;
         left: 0;
+        background-color: transparent;
     }
     .menu ul{
-        flex-direction: column; 
+        flex-direction: column;     
+    }    
+    #menu{
+        transform: translate(-70%, 10%);
     }
 }
