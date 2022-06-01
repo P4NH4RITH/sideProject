@@ -196,10 +196,7 @@ footer{
         flex-direction: column;
     }
     #menu{
-        transform: translate(-70%, 10%);
-    }
-    .menu ul:{
-        transform: translate(0%, 0%); 
+        transform: translateX(-70%);
     }
     .menu li{
         font-size: 15px;
@@ -236,6 +233,6 @@ footer{
         flex-direction: column;     
     }    
     #menu{
-        transform: translate(-70%, 10%);
+        transform: translateX(-70%);
     }
 }
