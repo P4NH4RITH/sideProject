@@ -231,6 +231,7 @@ footer{
         top: -35px;
         left: 0;
         background-color: transparent;
+        padding: 0;
         transform: translate(-75%, 0%);
     }
     .menu ul{
