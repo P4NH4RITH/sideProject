@@ -80,7 +80,7 @@ section:hover{
 }
 .maPhoto{
     grid-column: 1 / 1;
-    grid-row: 1 / 1;
+    grid-row: 2 / 2;
 }
 .aboutMe{
     grid-column: 2 / 3;
