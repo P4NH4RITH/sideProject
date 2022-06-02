@@ -61,6 +61,11 @@ img{
     width: 80%;
     height: 80%;
 }
+.maPhoto img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
 
 section{
     grid-template-rows: 1fr 1fr 1fr;
@@ -72,6 +77,10 @@ section{
 section:hover{
     transform: scale(120%);
     transition: ease, 2s;
+}
+.maPhoto{
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
 }
 .aboutMe{
     grid-column: 2 / 3;
