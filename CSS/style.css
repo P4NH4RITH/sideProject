@@ -246,7 +246,7 @@ footer{
     .menu ul{
         flex-direction: column;     
     }    
-    .menu > a{
+    .menu a{
         display:none;
     }
     .menuBurger{
